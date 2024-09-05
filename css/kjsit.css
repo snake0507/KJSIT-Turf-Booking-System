@@ -1,0 +1,96 @@
+.main{
+    margin-top: 2rem;
+    
+}
+.info-area{
+    margin: 0 10rem;
+    
+
+}
+.hero-sec{
+    display: flex;
+    flex-direction: row;
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+ 
+}
+.location > * {
+    padding-right: 10px;
+}
+.add{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+.add > * {
+    padding-right: 10px;
+
+}
+.get-loc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.get-link{
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+.get-link > a{
+    text-decoration: none;
+    color: red;
+}
+.station{
+    max-width: 130px;
+}
+.book-area{
+    padding-top: 4rem;
+   
+    z-index: -10;
+}
+.tab-details{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.tab-row{
+    display: flex;
+    flex-direction: row;
+
+}
+.tab-row > div{
+    padding-left: 0.5rem;
+}
+.tab-img{
+    padding-top: 2px;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+}
+.action-area{
+    border-radius: 10px;
+    border: 0px solid black;
+    z-index: 2;
+}
+.z2{
+    z-index: 2;
+}

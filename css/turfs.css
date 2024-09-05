@@ -1,0 +1,24 @@
+body{
+    overflow-x: hidden;
+}
+.text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-area{
+    padding: 4rem 15rem;
+}
+.text-area h2 {
+    margin-bottom: 1.5rem;
+}
+.text-area p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.img {
+    max-height: 330px;
+}
+.btn{
+    background-color: red;
+}

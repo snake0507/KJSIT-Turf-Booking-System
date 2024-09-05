@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    overflow: hidden;
+}
+a:link,a:active,a:visited{
+    color: black;
+}
+.navbar{
+    background-color: #9d3535;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-nav a:hover{
+    color: #000000;
+}
+.navbar-brand:hover{
+    color: #000000;
+}
+.navbar-size{
+    height: 4rem;
+}
+.navbar-nav > li {
+    padding : 0 1rem;
+    font-weight: 500;
+}
+.but{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d3535;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width:6rem;
+    height:32px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    margin-left: 1rem;
+}
+.but a {
+    text-align: center;
+    text-decoration: none;
+  color: #000000;
+  display: block;
+  
+}
+
+.but a:hover{
+    text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.bg-image{
+    background-repeat: no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../Images/Staduim-image.jpeg');
+    background-size: cover;
+    background-position: center bottom;
+}
+.text-main{
+    text-align: left;
+    padding-left: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+
+}
+.text-main h1{
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 0.8rem;
+}
+.text-main h2{
+    margin-bottom: 0.75rem;
+    color: white;
+}
+.text-main p{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+    
+}
+.button{
+    font-size:16px;
+    display: flex;
+    width:11rem;
+    align-items: center;
+    justify-content: center;
+    height:44px;
+    border-width:1px;
+    color:#000000;
+    font-weight: 500;
+    border-color:black;
+    text-shadow: 1px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    background:red;
+  }
+
+  .button a:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: red;
+  }
+
+.button a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: red;
+  }
+
+ .button a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: red;
+  }
+  
+ .button a:active {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: red;
+  }

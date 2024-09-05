@@ -1,0 +1,27 @@
+body{
+    overflow: hidden;
+}
+.reg-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5rem;
+    margin-top: 5rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(156, 38, 38);
+
+}
+.tab-content{
+    width: 25rem;
+}
+.reg{
+    font-size: 24px;
+    font-weight: 700;
+}
+.err{
+    font-size: 14px;
+    font-weight: 300;
+    color: red;
+}

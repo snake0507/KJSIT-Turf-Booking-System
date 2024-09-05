@@ -1,0 +1,30 @@
+body{
+    overflow: hidden;
+}
+.login-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem;
+    margin-top: 5rem;
+    
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(156, 38, 38);
+}
+.tab-content{
+    width: 25rem;
+}
+.but-col{
+    background-color: red !important;
+}
+.login{
+    font-size: 24px;
+    font-weight: 500;
+}
+.err{
+    font-size: 14px;
+    font-weight: 300;
+    color: red;
+}
