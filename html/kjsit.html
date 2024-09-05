@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/kjsit.css">
+    <title>KJSIT</title>
+</head>
+<body>
+    <nav class ="navbar navbar-expand-md sticky-top">
+        <div class = "container-fluid navbar-size">
+            <a href="Homepage.php" class="navbar-brand">Turf Management System</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a href="turfs.php" class="nav-link">Turfs</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Terms and conditions</a></li>
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                <li class="nav-item but"><a href="<?php if(isset($_SESSION['loggedin']) == true){echo "../html/logout.php";}else{echo "../html/login.php";} ?>">
+                <?php if(isset($_SESSION['loggedin']) == true){echo "Logout";}else{echo "Login";} ?>
+            </a></li>
+                
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid main">
+        <div class="info-area container">
+            <div class="hero-sec">
+                <div class="images col-md-5">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../Images/KJSCE-turf.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Images/KJSIT-turf.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Images/football-pitch-small.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          
+                        </button>
+                        <button class="carousel-control-next btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          
+                        </button>
+                      </div>
+                
+                </div>
+                <div class="details col-md-7">
+                    <div class="row">
+                        <div class="col-9"><h4>K.J Somaiya Institute of Technology Turf I Sion</h4></div>
+                        <div class="col-3 add">
+                            <div><img src="../icons/heart.png" alt="" width="24px" height="24px"></div>
+                            <div><img src="../icons/wishlist.png" alt="" width="24px" height="24px"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="location">
+                                <div class="loc-img">
+                                    <img src="../icons/location.png" alt="" width="16px" height="16px">
+                                </div>
+                                <div class="loc-text">
+                                    <p>Somaiya Ayurvihar Complex Eastern Express Highway Near Everard Nagar, Sion East, Mumbai, Maharashtra 400022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="get-loc ">
+                                <div class="get-link">
+                                    <a href="https://goo.gl/maps/uXmCDGiyxuaA4FgC8" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                                    <img src="../icons/arrows.png" alt="" width="16px" height="16px">
+                                </div>
+                                <div class="station">
+                                    <p>Nearest Station:  Sion(2.3 Km)</p>
+                                </div>
+                                <p></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="book-area">
+        <div class="container-md action-area">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Book a Slot</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Details</button>
+                </li>
+                
+                
+              </ul>
+              <div class="tab-content z2" id="myTabContent">
+                <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+                <div class="tab-pane fade " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="tab-details">
+                        <h4>Details</h4>
+                        <br>
+                        <div class="tab-row">
+                            <div class="tab-img">                            
+                                <img src="../icons/info.png" alt="" width="26px" height="26px">
+                            </div>
+                            <div>
+                                <p class="heading">Description</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="tab-row">
+                            <div class="tab-img">                            
+                                <img src="../icons/star.png" alt="" width="22px" height="22px">
+                            </div>
+                            <div>
+                                <p class="heading">Highlights</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                            </div>
+                            
+                        </div>
+                        <div class="tab-row">
+                            <div class="tab-img">                            
+                                <img src="../icons/cancel.png" alt="" width="22px" height="22px">
+                            </div>
+                            <div>
+                                <p class="heading">Cancelation</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
